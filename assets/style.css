@@ -13,20 +13,22 @@ body {
 
 header {
     position: fixed;
-    margin: auto;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: rgb(209, 229, 247);
     font-family: Futura;
-    display: inline;
+    
     font-style: normal;
     font-weight: lighter;
 }
 
 h1 {
-    padding-left: 33%;
+    
 }
 
 .header-name {
+    text-align: center;
     background-color: rgb(209, 229, 247);
     color: rgb(68, 44, 44);
     font-stretch: extra-expanded;
@@ -48,11 +50,9 @@ h1 {
 }
 
 .navList {
-    position: absolute;
-    padding-left: 33%;
+    text-align: center;
     width: 100%;
     background-color: rgb(209, 229, 247);
-    display: inline;
     font-family: Futura;
     font-style: normal;
     font-weight: lighter;
@@ -60,11 +60,24 @@ h1 {
 }
 
 
-header nav ul {
+header nav ul li {
+    text-decoration: none;
     display: inline;
     background-color: rgb(209, 229, 247);
     color: bisque;
+    
+    font-family: Futura;
+    font-style: normal;
+    font-weight: lighter;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
     display: inline;
+    background-color: rgb(209, 229, 247);
+    color: rgb(119, 139, 210);
+    
     font-family: Futura;
     font-style: normal;
     font-weight: lighter;
