@@ -1,7 +1,95 @@
 * {
+    font-family: Futura, "Noto-Sans", Arial, Helvetica, sans-serif, "Work Sans";
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
+
+
+}
+
+body {
+    background-color: rgb(100, 136, 144);
+}
+
+header {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(209, 229, 247);
+    font-family: Futura;
+    display: inline;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+h1 {
+    padding-left: 33%;
+}
+
+.header-name {
+    background-color: rgb(209, 229, 247);
+    color: rgb(68, 44, 44);
+    font-stretch: extra-expanded;
+    font-size: 40px;
+
+}
+
+.headerHyphen {
+    color: rgb(175, 112, 112);
+    font-stretch: extra-expanded;
+    font-size: 40px;
+
+}
+
+.nelsonStone {
+    color: rgb(175, 112, 112);
+    font-stretch: extra-expanded;
+    font-size: 40px;
+}
+
+.navList {
+    position: absolute;
+    padding-left: 33%;
+    width: 100%;
+    background-color: rgb(209, 229, 247);
+    display: inline;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: lighter;
+    
 }
 
 
+header nav ul {
+    display: inline;
+    background-color: rgb(209, 229, 247);
+    color: bisque;
+    display: inline;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: lighter;
+    list-style-type: none;
+}
 
+.aboutMe, .myWork, .contactMe, .myResume {
+    color: rgb(36, 53, 53);
+    display: inline;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: lighter;
+
+}
+
+.container1 {
+    padding: 30px;
+    margin-right: 10%;
+    display: inline-block;
+
+}
+
+.aboutMeSection {
+    font-size: larger;
+    padding: 30px;
+    margin-inline: 50px;
+    display: inline-block;
+}
