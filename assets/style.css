@@ -18,9 +18,10 @@ header {
     width: 100%;
     background-color: rgb(209, 229, 247);
     font-family: Futura;
-    
     font-style: normal;
     font-weight: lighter;
+    border-radius: 16px;
+    padding-bottom: 10px;
 }
 
 
@@ -100,13 +101,21 @@ header nav ul li a {
 }
 
 .mainContent {
-    margin-left: 3%;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    margin: 3%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
+.aboutMeSection {
+    color: rgb(68, 44, 44);
+    font-size: larger;
+    padding: 30px;
+    display: flex;
+    border-radius: 30px;
+    border-color: rgb(175, 112, 112);
+    
+}
 
 .aboutMeSection .aboutMeHeader {
     color: rgb(68, 44, 44);
@@ -119,60 +128,8 @@ header nav ul li a {
 
 .container1 {
     padding: 0;
-    margin-right: 3%;
+    border: 30px rgb(68, 44, 44);
     display: block;
 
 }
 
-.aboutMeSection {
-    color: rgb(68, 44, 44);
-    font-size: larger;
-    padding: 30px;
-    display: flex;
-    align-items: top;
-    
-}
-
-.myWorkSection {
-    padding-top: 50px;
-    padding-left: 20px;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-}
-
-.workHeader {
-    margin-bottom: 3%;
-    margin-left: 3%;
-}
-
-h4 {
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
-}
-
-h4 ~ .contact-info {
-    
-    display: inline;
-    text-align: center;
-    justify-content: center;
-}
-
-h4 ~ .contact-info p {
-    text-decoration: none;
-    padding: 20px;
-    background-color: bisque;
-    color: rgb(175, 112, 112);
-    border: none;
-    border-radius: 32px;
-    padding-left: 24px;
-    padding-right: 24px;
-    font-family: Futura;
-    font-style: normal;
-    font-weight: lighter;
-    list-style-type: none;
-
-}
