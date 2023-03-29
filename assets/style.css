@@ -103,27 +103,48 @@ header nav ul li a {
 .mainContent {
     margin: 3%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-}
-
-.aboutMeSection {
-    color: rgb(68, 44, 44);
-    font-size: larger;
-    padding: 30px;
-    display: flex;
-    border-radius: 30px;
-    border-color: rgb(175, 112, 112);
+    justify-content: space-between;
     
 }
 
-.aboutMeSection .aboutMeHeader {
+.flex-section {
+    display: flex;
+    flex-direction: row;
+}
+
+div.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 66%;
+}
+
+div.right-side {
+    width: 33%;
+    
+}
+
+.bodySectionText {
+    display: flex;
+    color: rgb(68, 44, 44);
+    font-size: larger;
+    padding: 30px;
+    
+}
+
+.bodySectionText .bodyHeaders {
     color: rgb(68, 44, 44);
     height: 50px;
     width: 400px;
-    display: block;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: flex;
+    /* justify-content: flex-start;
+    flex-direction: column; */
+}
+
+.bodySectionText p {
+    text-align: center;
 }
 
 .container1 {
@@ -133,3 +154,53 @@ header nav ul li a {
 
 }
 
+.bottom-side {
+    display: flex;
+    position: absolute;
+    
+}
+
+.contactInfo {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.contactInfo p a {
+    text-decoration: none;
+}
+
+.projectsection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.projectItem {
+    padding: 30px;
+    width: 250px;
+    height: 150px;
+}
+
+.projectsection {
+    width: 150px;
+    height: auto;
+}
+
+.workContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+.workContainer2 {
+    display: flex;
+    
+}
