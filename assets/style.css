@@ -82,6 +82,8 @@ header nav ul li a {
     background-color: bisque;
     color: rgb(175, 112, 112);
     border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 32px;
     padding-left: 24px;
     padding-right: 24px;
@@ -127,6 +129,14 @@ div.right-side {
     border-color: rgb(68, 44, 44);
     width: 33%;
     
+    
+}
+
+.mainContent .right-side {
+    border-left: 10px;
+    border-color: rgb(68, 44, 44);
+
+
 }
 
 .bodySectionText {
@@ -134,21 +144,70 @@ div.right-side {
     color: rgb(68, 44, 44);
     font-size: larger;
     padding: 30px;
+
     
+}
+
+.footerSectionText {
+    display: flex;
+    color: rgb(68, 44, 44);
+    font-size: larger;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.footer-name {
+    text-align: center;
+    background-color: rgb(209, 229, 247);
+    color: rgb(68, 44, 44);
+    font-stretch: extra-expanded;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+    padding-bottom: 10px;
+
 }
 
 .bodySectionText .bodyHeaders {
     background-color: rgb(209, 229, 247);
     color: rgb(68, 44, 44);
-    height: 50px;
+    
     width: 400px;
+    padding-left: 10px;
+    
     display: flex;
-
+    justify-content: flex-start;
+    align-items: flex-start;
 
 }
 
+.bodySectionText .aboutmeheader {
+    width: 350px;
+    max-height: 50px;
+}
+
+.bodySectionText .workHeader {
+    width: 400px;
+    min-height: 50px;
+}
+
+.projectsection .bodyHeaders, .myportfolioheader {
+    height: 50px;
+    width: 500px;
+}
+
 .bodySectionText p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
+    align-items: center;
+    padding-left: 3%;
 }
 
 .container1 {
@@ -160,7 +219,8 @@ div.right-side {
 
 .bottom-side {
     width: 100%;
-    padding: 30px;
+    padding: 15px;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -168,7 +228,8 @@ div.right-side {
 }
 
 .contactInfo {
-    padding: 30px;
+    background-color: rgb(209, 229, 247);
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,12 +238,26 @@ div.right-side {
 }
 
 .contactInfo p {
-    padding: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
     align-items: stretch;
+    border: none;
+    border-radius: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: lighter;
+    list-style-type: none;
+    background-color: bisque;
+    color: rgb(175, 112, 112);
+
 }
 
 .contactInfo p a {
     text-decoration: none;
+    list-style-type: none;
 }
 
 .projectsection {
@@ -190,15 +265,26 @@ div.right-side {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     padding-bottom: 35px;
+
 }
 
 .projectItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 30px;
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    text-decoration: underline;
+    justify-content: space-evenly;
+}
+
+h2 .bodyHeaders .workHeader {
+    height: 50px;
+    width: 350px;
 }
 
 .workContainer {
@@ -209,11 +295,16 @@ div.right-side {
 
 .workContainer2 {
     display: flex;
+    align-items: flex-start;
     
 }
 
+.workImgContainer {
+    padding-left: 10px;
+}
+
 .contactMeHeader {
-    
+    font-size: larger;
     padding: 10px;
     background-color: rgb(209, 229, 247);
     color: rgb(68, 44, 44);
@@ -222,3 +313,135 @@ div.right-side {
     display: flex;
     
 }
+
+@media screen and (max-width: 768px) {
+
+    .header {
+          
+        width: 100%;
+    }
+
+    .header .navList {
+        font-size: 20px;
+    }
+    
+    .header .navList li {
+        width: 100%;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 0 1 25%;
+    }
+    
+    .workImgContainer {
+        width: 75%;
+    }
+
+    p {
+        max-width: 800px;
+    }
+
+    .bodySectionText .bodyHeaders {
+        max-width: 400px;
+        min-height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .bodySectionText .aboutmeheader {
+        max-width: 400px;
+        max-height: 100%;
+        
+       
+    }
+
+    .mainContent .left-side {
+        display: flex;
+        width: 80%;
+        margin-right: 5%;
+        
+    }
+    
+    .mainContent .right-side {
+        margin-left: 2.5%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 1 1 50%;
+        
+    }
+
+    .mainContent .right-side .portraitimgcontainer {
+        justify-content: center;
+        max-width: 100%;
+        height:auto;
+    }
+
+    .projectsection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 0 25%;
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .projectsection .projectItem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 0 50%;
+        max-width: 100%;
+        min-height: auto;
+
+    }
+
+    .projectsection .projectItem div {
+        padding: 25px;
+    }
+
+    .contactInfo p {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .projectsection .bodyHeaders, .myportfolioheader {
+        min-width: 100%;
+        height: 50px;
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+  
+    .header {
+          
+        width: 100%;
+    }
+    
+    .header .navList li {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 1 50%;
+    }
+    .right-side {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        max-width: 100%;
+      
+    }
+    .mainContent, .left-side {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+  }
