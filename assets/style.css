@@ -122,6 +122,9 @@ div.left-side {
 }
 
 div.right-side {
+    padding-left: 10px;
+    border-left: 10px;
+    border-color: rgb(68, 44, 44);
     width: 33%;
     
 }
@@ -135,12 +138,13 @@ div.right-side {
 }
 
 .bodySectionText .bodyHeaders {
+    background-color: rgb(209, 229, 247);
     color: rgb(68, 44, 44);
     height: 50px;
     width: 400px;
     display: flex;
-    /* justify-content: flex-start;
-    flex-direction: column; */
+
+
 }
 
 .bodySectionText p {
@@ -155,17 +159,26 @@ div.right-side {
 }
 
 .bottom-side {
+    width: 100%;
+    padding: 30px;
     display: flex;
-    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
     
 }
 
 .contactInfo {
-    padding-left: 30px;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 
+}
+
+.contactInfo p {
+    padding: 25px;
+    align-items: stretch;
 }
 
 .contactInfo p a {
@@ -176,9 +189,10 @@ div.right-side {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-    
-    
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 35px;
 }
 
 .projectItem {
@@ -187,20 +201,24 @@ div.right-side {
     height: 150px;
 }
 
-.projectsection {
-    width: 150px;
-    height: auto;
-}
-
 .workContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
 }
 
 .workContainer2 {
+    display: flex;
+    
+}
+
+.contactMeHeader {
+    
+    padding: 10px;
+    background-color: rgb(209, 229, 247);
+    color: rgb(68, 44, 44);
+    height: 50px;
+    width: 100%;
     display: flex;
     
 }
