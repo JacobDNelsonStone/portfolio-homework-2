@@ -314,6 +314,12 @@ h2 .bodyHeaders .workHeader {
     
 }
 
+.left-side .portraitimgcontainerMV {
+    display: none;
+    
+}
+
+
 @media screen and (max-width: 768px) {
 
     .header {
@@ -362,6 +368,131 @@ h2 .bodyHeaders .workHeader {
         margin-right: 5%;
         
     }
+   
+    
+    .mainContent .right-side {
+        width: 20%;
+        margin-left: 2.5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        
+    }
+
+    .left-side .mobileviewaboutmesection {
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .mobileviewaboutmesection .portraitimgcontainerMV {
+        display: show;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .mobileviewaboutmesection p {
+        margin-right: 15px;
+    }
+
+    .portraitimgcontainerMV img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .portraitimgcontainer img {
+        display: none;
+        justify-content: flex-end;
+        max-width: 100px;
+        height:auto;
+    }
+
+    .projectsection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex: 1 0 25%;
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .projectsection .projectItem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex: 1 1 50%;
+        max-width: 50%;
+        min-height: auto;
+
+    }
+
+    .projectsection .projectItem div {
+        padding: 25px;
+    }
+
+    .contactInfo p {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .projectsection .bodyHeaders, .myportfolioheader {
+        max-width: 40%;
+        height: 50px;
+
+    }
+
+    .workImgContainer a img {
+        max-width: 470px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+  
+    .header {
+          
+        width: 100%;
+    }
+    
+    .header .navList li {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 1 50%;
+    }
+    .workImgContainer {
+        width: 75%;
+    }
+
+    p {
+        max-width: 800px;
+    }
+
+    .bodySectionText .bodyHeaders {
+        max-width: 400px;
+        min-height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .bodySectionText .aboutmeheader {
+        max-width: 400px;
+        max-height: 100%;
+        
+       
+    }
+
+    .mainContent .left-side {
+        display: flex;
+        width: 90%;
+        margin-right: 5%;
+        
+    }
     
     .mainContent .right-side {
         margin-left: 2.5%;
@@ -382,7 +513,7 @@ h2 .bodyHeaders .workHeader {
     .projectsection {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex: 1 0 25%;
         max-width: 100%;
         min-height: auto;
@@ -408,40 +539,9 @@ h2 .bodyHeaders .workHeader {
     }
 
     .projectsection .bodyHeaders, .myportfolioheader {
-        min-width: 100%;
+        min-width: 40%;
         height: 50px;
 
     }
-}
 
-
-@media screen and (max-width: 992px) {
-  
-    .header {
-          
-        width: 100%;
-    }
-    
-    .header .navList li {
-        margin: 15px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        flex: 1 1 50%;
-    }
-    .right-side {
-        margin-right: 5%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:space-evenly;
-        max-width: 100%;
-      
-    }
-    .mainContent, .left-side {
-        display: flex;
-        flex-direction: column;
-
-
-    }
   }
