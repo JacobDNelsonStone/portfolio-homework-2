@@ -5,6 +5,6 @@
 
 ## Links to final webpage
 
-* [Heres the link to the published webpage!](https://jacobdnelsonstone.github.io/portfolio-homework-2/)
+* [Heres the link to the published webpage!](https://jacobdnelsonstone.github.io/starter-portfolio/)
 
 
